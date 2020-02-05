@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Remove the Comments and fill up the relevant code -->
+
+<style type="text/css">
+
+body{
+background-color:#FFAACC;
+}
+
+h1
+{
+color:#770080;
+font-family:Courier New;
+font-style :italic;
+text-align:center;
+
+}
+
+form
+{
+margin :0 auto;
+width:300px;
+}
+
+#result
+{
+color:#770080;
+
+font-weight:bold;
+
+}
+</style>
+
+<title>DREAM Theme Park</title>
+<script>
+function calculateCharges()
+{
+alert('sdgfsgf');
+   var adult=45;//=document.getElementById('adult').value;
+   alert('adult');
+   var children=document.getElementById('children').value;
+   var name=document.getElementById('customerName').value;
+   var type=document.getElementById('booking').value;
+   var total=(adult * 1500) +(children * 1200);
+   if(type==='School')
+   {
+       total = total/2;
+   }
+   else if(type='Corporate'){
+       total=(total *3)/4
+   }
+   var result='Thank you '+name+'.Total cost to be paid is'+total;
+   
+   document.getElementById('result').innerHTML=result;
+   return false;
+}
+
+</script>
+
+</head>
+<body>
+<!--Write necessary code wherever needed to complete this knock out code challenge  -->
+<h1>Book Your Tickets</h1>
+<form onsubmit="return calculateCharges()" >
+<table>
+
+<tr>
+<td>Customer Name</td>
+<td><input type="text" name="customerName" id="customerName" required></td>
+
+<tr>
+<td>Address<!-- Fill the label for address--></td>
+<td><textarea name="address" id="Address" rows="5" cols="20" required=""></textarea><!-- Fill the code for address--></td>
+</tr>
+
+<tr>
+<td>Email ID<!-- Fill the label for Email id--></td>
+<td><input type="email" name="customerEmail" id="customerEmail" required><!-- Fill the code for Email id--></td>
+</tr>
+
+<tr>
+<td>Mobile number<!-- Fill the label for mobile number--></td>
+<td><input type="number" name="customerMobileNumber" id="customerMobileNumber" required><!-- Fill the code for mobile number --></td>
+</tr>
+
+<tr>
+<td>Park Location</td>
+<td><input type='radio' name='location' value='delhiLocation' id='delhiLocation' required>Delhi
+    <input type='radio' name='location' value='locationMumbai' id='locationMumbai' >Mumbai
+   
+</td>
+</tr>
+
+<tr>
+<td>Date of Visit<!--Fill the label for date of visit--></td>
+<td><input type='date' name='dateOfVisit' id='dateOfVisit' required><!-- Fill the code for date of visit --></td>
+</tr>
+
+<tr>
+<td>Booking Type</td>
+<td><input name="bookingType" id="bookingType" list="bookType">
+		<!--Provide the tag name to  implement autocomplete feature -->   
+  	<datalist id="bookType">
+  	<option value="Normal">		
+    <option value="School">	
+	<option value="Corporate">
+     </datalist>
+</td>
+</tr>
+
+<tr>
+<td>Adult<!--Fill the label for adults--></td>
+<td><input type='number' name='adults' id='adults' min='0' max='500'><!-- Fill the code for adults --></td>
+</tr>
+
+<tr>
+<td>Children<!--Fill the label for children--></td>
+<td><input type="number" name='children' id='children' required> <!--Fill the code for children--></td>
+</tr>
+
+
+<tr>
+<td><input type='submit' name='submit' id='submit' value='Book Now'></td>
+<td><input type='reset' name='reset' id='reset' value='Clear'></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<div id='result'></div>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

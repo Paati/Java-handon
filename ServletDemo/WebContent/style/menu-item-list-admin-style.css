@@ -1,0 +1,92 @@
+#header-content{
+    background-color: rgb(59, 97, 179);
+    color : #ffffff;
+    height:50px;
+}
+#header-menu-link {
+ float : right; 
+margin-right: 100px;
+color : #ffffff;
+}
+#cart {
+    float : right; 
+   margin-right: 40px;
+   }
+
+#admin-menu-tables{
+            margin:90px ;
+            padding : 15px; 
+            width: 70%;
+
+}
+td {
+
+    padding:0 20px 0 20px;
+    text-align: center;
+}
+th{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#menu-item-p{
+    margin-left: 60px;
+    font-size: 2em;
+}
+#footer-admin-list{
+    background-color: #bebebe;
+    height: 40px;
+    padding-top: 10px;
+    }
+#edit-item{
+        text-decoration: underline;
+        
+    }
+#edit-main-form{
+height: auto;
+width: 500px;
+
+}
+ #upper-row{
+    
+    display: inline-block;
+   margin-right: 15%;
+}
+#save-button{
+    background-color: rgb(59, 97, 179) ;
+    color: #ffffff;
+    height: 45px;
+    width: 110px;
+}
+.check-box{
+    height: 25px;
+    width: 25px;
+}
+.free-delivery{
+    margin: 15px 0 15px 0;
+    }
+#mdl-row{
+        width: 100%;
+    }
+table tr :nth-child(1){
+        padding-right: 200px;
+        text-align: left;
+    }
+    table tr :nth-child(7){
+    
+        text-align: center;
+    }
+    .rad{
+        height: 25px;
+        width: 25px;
+    }
+    #image-section{
+            float: right;
+       
+            display: inline-block;
+           
+    }
+    img{
+        border-radius: 30px;
+        
+    }
+

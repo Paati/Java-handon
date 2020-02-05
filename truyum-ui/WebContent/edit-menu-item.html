@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>edit-menu-item</title>
+<link rel="stylesheet" type="text/css" href="style/style5.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+      <h1>truYum
+      <img src="D:\dushyant\truyum-ui\WebContent\images\fork.png" id="img">
+      <a href="menu-item-list-admin.html" id="menu">Menu</a></h1>
+    </header>
+    
+    <h1 id="h">Edit menu item</h1>
+   
+    <div id="one">
+	 <form action="edit-menu-item-status.html" onsubmit="return validateForm()">
+		<label for="name">Name</label> 
+  		<br><br>
+  		<input id="name" type="text" value="sandwitch">
+  		<br><br>
+  		
+  		<div id="l">
+  		<label for="price">price(Rs.)</label> <br><br>
+  		<input id="price" type="text" value="97"> 
+  		</div>
+		
+		<div id="l">
+		<label for="active">Active</label> <br><br>
+  		<label>Yes</label><input type="radio" name="active" checked>
+  		<label>No</label><input type="radio" name="active">
+  		</div>
+		
+		<div id="l">
+		<label for="date of launch">Date of launch</label> <br><br>
+		<input id="Dot" type="text" value="27/04/2022"> &nbsp;&nbsp;
+		</div>
+		
+	
+		<label for="category">Category</label> <br><br>
+	    <select id="category">
+	        <option value="">Main course</option>
+        	<option value="starter">Starter</option>
+ 			<option value="Main course">Main course</option>
+ 			<option value="Dessert">Dessert</option>
+        	<option value="Drink">Drink</option>
+        </select>
+        
+        <br><br>
+		
+		<input type="checkbox" checked >
+        <label for="free delivery"> Free Delivery </label> 
+        
+        <br><br>
+
+        <input id="bt" type="submit" value="Save" >
+     </form> 
+    </div>
+    <footer>copyright @2019</footer>
+</body>
+</html>

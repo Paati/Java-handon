@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit menu</title>
+<link type="text/css" rel="stylesheet"
+	href="C:\Users\841137\Desktop\truyum-ui\style\menu-item-list-admin-style.css">
+</head>
+<body>
+	<div id="header-content">
+		<img src="C:\Users\841137\Desktop\truyum-ui\Images\truLogo.png"
+			height="50px">
+		<div id="header-menu-link">
+			<a style="color: #ffffff;" href="#">Menu</a>
+		</div>
+	</div>
+	</div>
+	<div id="main-content">
+		<form id="edit-menu-form" method="post" action="AddToDB" style="margin: 100px;">
+			<p style="font-size: 2em;">Edit Menu Item</p>
+			<div>Name</div>
+			<input id="name" type="text" name="name"
+				style="width: 100%; margin-bottom: 10px;">
+			<div id="mdl-row">
+				<div id="upper-row">
+					Price
+
+					<div id="lower-row">
+						<input type="number" name="price" id="price">-
+					</div>
+				</div>
+				<div id="upper-row">
+					Active
+
+					<div id="lower-row">
+						<input class="rad" type="radio" name="active" value="yes">Yes
+						<input class="rad" type="radio" name="active" value="no">No
+					</div>
+				</div>
+				<div id="upper-row">
+					Date of Launch
+
+					<div id="lower-row">
+						<input type="date" name="date" id="date">
+					</div>
+				</div>
+				<div id="upper-row">
+					Category
+
+					<div id="lower-row">
+						<select name="category">
+							<option value="select">Select</option>
+							<option value="Main Course">Main Course</option>
+							<option value="Starters">Starters</option>
+							<option value="Desserts">Desserts</option>
+							<option value="Drinks">Drinks</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="free-delivery">
+				<input type="checkbox" class="check-box" name="free-delivery">
+				Free free-delivery
+			</div>
+
+			<input id="save-button" type="submit" name="Save" value="Save">
+		</form>
+	</div>
+	<footer id="footer-admin-list"> copyright &copy; 2019 </footer>
+</body>
+</html>

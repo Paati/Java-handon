@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<style type="text/css">
+
+body{
+background-color: #FFAACC;
+}
+
+h1
+{
+color: #770080;
+font-family: courier new;
+font-style: italic;
+text-align: center;
+
+}
+
+form
+{
+margin :0 auto;
+width:300px;
+}
+
+#result
+{
+color: #770080;
+
+font-weight: bold;
+
+}
+</style>
+
+<title>Infotech College</title>
+<script>
+function calculateFeedbackRating()
+{
+   
+  var feedbackRate;
+  var trainerName = document.getElementsByName("trainerName")[0].value;
+  if(document.getElementsByName("trainerFeedback")[0].value=="Excellent") {
+      feedbackRate = 5;
+  } else if(document.getElementsByName("trainerFeedback")[0].value=="Very Good") {
+      feedbackRate = 4;
+  } else if(document.getElementsByName("trainerFeedback")[0].value=="Good") {
+      feedbackRate = 3;
+  } else if(document.getElementsByName("trainerFeedback")[0].value=="Average") {
+      feedbackRate = 2;
+  } else if(document.getElementsByName("trainerFeedback")[0].value=="Below Average") {
+      feedbackRate = 1;
+  }
+    document.getElementById("result").innerHTML = "Feedback rating of " + trainerName + " is " + feedbackRate;  
+   return false;
+}
+
+</script>
+
+</head>
+<body>
+
+<h1> College Training Feedback Form </h1>
+<form onsubmit="return calculateFeedbackRating()" >
+<table>
+
+<tr>
+<td><label for="participantName">Participant Name</label></td>
+<td><input type="text" name="participantName"  required/></td>
+
+<tr>
+<td><label for="collegeName">College Name</label></td>
+<td><input type="text" name="collegeName"  required/></td>
+</tr>
+
+<tr>
+<td><label for="participantAddress">Participant Address</label></td>
+<td><textarea name="participantAddress" rows="5" cols="20" required></textarea></td>
+</tr>
+
+<tr>
+<td><label for="gender">Gender</label></td>
+<td><input type="radio" name="gender"  value="Male" required/>Male
+<input type="radio" name="gender"  value="Female" required/>Female</td>
+</tr>
+
+<tr>
+<td><label for="email">Email ID</label></td>
+<td><input type="email" name="email"  required/></td>
+</tr>
+
+
+
+<tr>
+<td><label for="mobileNumber">Mobile Number</label></td>
+<td><input type="text" name="mobileNumber"  required pattern="[789][0-9]{9}"/></td>
+</tr>
+
+<tr>
+<td><label for="trainerName">Trainer's Name</label></td>
+<td><input type="text" name="trainerName"  required/></td>
+</tr>
+
+<tr>
+<td><label for="courseName">Course Name</label></td>
+<td><input type="text" name="courseName"  required/></td>
+</tr>
+
+<tr>
+<td><label for="dateofcompletion">Course Completion date</label></td>
+<td><input type="date" name="dateofcompletion"  required/></td>
+</tr>
+
+<tr>
+<td><label for="trainerFeedback">Trainer's Feedback</label></td>
+<td><input name="trainerFeedback"  list="feedback" required/>
+                                <datalist id="feedback">   
+                                <option value="Excellent"/>
+                                <option value="Very Good"/>
+                                <option value="Good"/>
+                                <option value="Average"/>
+                                <option value="Below Average"/>
+                                </datalist>
+
+</td>
+</tr>
+
+
+<tr>
+<td><input type="submit" name="submit"  value="Submit Feedback"/></td>
+<td><input type="reset" name="reset" value="Clear"/></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<div id="result"></div>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
+
+

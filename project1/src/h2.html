@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>lets do some javascript</title>
+</head>
+<body>
+<input type="text" id="textinput">
+<button id="bt">change text</button>
+<p id="text">this is text</p>
+<script type="text/javascript">
+  document.getElementById("bt").onclick = function()
+  {
+	  var v = "";
+	  v = document.getElementById("textinput").value;
+	  document.getElementById("text").innerHTML=v;
+  }
+</script>
+</body>
+</html>
